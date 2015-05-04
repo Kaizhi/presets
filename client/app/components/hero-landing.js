@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-var navHeight = 65;
+var navHeight = 65; // Height of navbar
 
 export default Ember.Component.extend({
 	actions: {
@@ -21,6 +21,7 @@ export default Ember.Component.extend({
 
 		this.get('heroEl').css('height', window.innerHeight);
 		this.set('height', window.innerHeight);
+		$('.navbar').addClass('top');
 	},
 
 	handleResize: function (event) {
@@ -30,7 +31,6 @@ export default Ember.Component.extend({
 
 	handleScroll: function (event) {
 		var $nav = $('.navbar');
-		console.log(window.scrollY);
 
 		if (window.scrollY > this.get('height') / 2) {
 			$nav.removeClass('top');
