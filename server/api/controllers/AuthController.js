@@ -124,7 +124,6 @@ var AuthController = {
    * @param {Object} res
    */
   callback: function (req, res) {
-    console.log(req);
     function tryAgain (err) {
 
       // Only certain error messages are returned via req.flash('error', someError)
@@ -171,7 +170,7 @@ var AuthController = {
 
         // Upon successful login, send the user to the homepage were req.user
         // will be available.
-        res.redirect('/');
+        res.redirect('http://localhost:4200');
       });
     });
   },

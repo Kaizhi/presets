@@ -23,6 +23,79 @@ a {
 	margin-bottom: 1.2rem;
 }
 
+/* Modal
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.overlay {
+	position: fixed;
+	background-color: rgba(0,0,0,0.8);
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 5;
+}
+
+.modal {
+	position: fixed;
+	width: 400px;
+	min-height: 400px;
+	background-color: white;
+	border-radius: 3px;
+	top: 50%;
+	margin-top: -200px;
+	left: 50%;
+	margin-left: -200px;
+	z-index: 500;
+
+	h1 {
+		text-align: center;
+		padding: 20px;
+		margin: 0;
+		font-size: 24px;
+	}
+
+
+	.modal-body {
+		padding: 20px;
+
+		.signup {
+			width: 100%;
+			margin: 0 auto;
+		}
+	}
+}
+
+/* Signin modal
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.signup-modal {
+
+	.signup {
+		text-align: center;
+
+		input {
+			margin-bottom: 10px;
+
+			&[type='submit'] {
+				width: 100%;
+			}
+		}
+	}
+	.oauth {
+		width: 100%;
+
+		i {
+			margin-right: 10px;
+		}
+	}
+
+	p {
+		text-align: center;
+		margin: 5px 0 15px 0;
+	}
+}
+
+
+
 /* Hero
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 

@@ -4,13 +4,14 @@
 			<li class="navbar-item">{{#link-to 'landing' classNames='navbar-link'}}Presets.io{{/link-to}}</li>
 			<li class="navbar-item">{{#link-to 'explore' classNames='navbar-link'}}Create{{/link-to}}</li>
 			<li class="navbar-item">{{#link-to 'explore' classNames='navbar-link'}}Explore{{/link-to}}</li>
-			<li class="navbar-item navbar-button"><a class="button button-primary" href="/signin">Sign Up</a></li>
+			<li class="navbar-item navbar-button"><a {{action 'openModal' 'modal'}}class="button button-primary" href="#">Sign Up</a></li>
 			<li class="navbar-item login-link">{{#link-to 'explore' classNames='navbar-link'}}Login{{/link-to}}</li>
 		</ul>
 	</div>
 </nav>
 
 {{outlet}}
+{{outlet 'modal'}}
 
 <footer class="footer">
 	<p>Made with love by&nbsp;<a href="http://kaizhiwei.com" target="blank">Kaizhi Wei</a>.&nbsp; Have any questions? Feel free to&nbsp;<a href="mailto:hello@kaizhiwei.com">contact</a>&nbsp;me.</p>

@@ -1,0 +1,18 @@
+<div class="overlay" {{action 'closeModal' 'modal'}}>
+</div>
+<div class="modal">
+	<h1>Sign Up</h1>
+	<div class="modal-body signup-modal">
+		<a href="http://localhost:1337/auth/twitter"><button class="oauth button twitter"><i class="fa fa-twitter"></i>Sign up with Twitter</button></a>
+		<a href="http://localhost:1337/auth/facebook"><button class="oauth button facebook"><i class="fa fa-facebook"></i>Sign up with Facebook</button></a>
+		<p>Or</p>
+		<form class="signup">
+
+			<input class="u-full-width" type="text" placeholder="Name" id="nameInput">
+			<input class="u-full-width" type="email" placeholder="Email" id="emailInput">
+			<input class="u-full-width" type="password" placeholder="Password" id="passwordInput"/>
+
+			<input class="button-primary" type="submit" value="Submit">
+		</form>
+	</div>
+</div>
